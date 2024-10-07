@@ -9,3 +9,5 @@ The naming scheme follows the workshop structure.
 
 - [Temperature Data](01_udp_temperature_data/README.md)  
   Simple UDP protocol with fixed data length.
+- [Stock Ticker](02_tcp_stock_ticker/README.md)  
+  Simple TCP protocol showing variable-size PDUs with a length header.

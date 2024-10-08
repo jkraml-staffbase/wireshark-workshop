@@ -10,7 +10,8 @@ function p_tzt.dissector(buf, pkt, tree)
     for i=0,buf:len()-1 do
         b = buf(i,1):uint() -- read next byte
         if b == 0 and start_idx ~= nil then -- we're in a PDU and it just ended
-            pkt.cols['info'] = 'Text msg'
+            pkt.cols['protocol'] = 'WS03'
+            pkt.cols['info'] = 'Text message'
             local length = i-start_idx + 1
             local relevant_bytes = buf(start_idx, length)
             local subtree = tree:add(p_tzt, relevant_bytes)

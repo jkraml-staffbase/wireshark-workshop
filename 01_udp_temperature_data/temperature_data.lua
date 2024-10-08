@@ -11,7 +11,12 @@ p_tempdata.fields = { f_sensorid, f_temp }
 -- Protocol dissector function for parsing packets
 function p_tempdata.dissector(buf, pkt, tree)
     -- simple demo, a proper implementation would do some sanity checks first
+
+    -- set basic packet information for display
+    pkt.cols['protocol'] = 'WS01'
     pkt.cols['info'] = 'Temperature measurement'
+
+    -- mark specific byte ranges for display
     local subtree = tree:add(p_tempdata, buf(0,5))
     subtree:add(f_sensorid, buf(0,1))
     subtree:add(f_temp, buf(1,4))

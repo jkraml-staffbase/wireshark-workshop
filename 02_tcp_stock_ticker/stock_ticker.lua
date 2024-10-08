@@ -24,6 +24,7 @@ function calc_pdu_len(buf, pkt, offset)
 end
 
 function pdu_dissector(buf, pkt, tree)
+    pkt.cols['protocol'] = 'WS02'
     pkt.cols['info'] = 'Stock price'
     local symbol_len = buf(0,1):uint()
     local subtree = tree:add(p_ticker, buf(0,1+symbol_len+4))

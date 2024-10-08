@@ -32,6 +32,3 @@ end
 
 local tcp_table = DissectorTable.get("tcp.port")
 tcp_table:add(4445, p_tzt)
-
--- local wtap_encap_table = DissectorTable.get("wtap_encap")
--- wtap_encap_table:add(wtap.USER15, p_multi)

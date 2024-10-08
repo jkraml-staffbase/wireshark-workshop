@@ -13,7 +13,7 @@ Simple TCP protocol showing variable-size PDUs with a length header.
 
 - `temperature_data.py`: Python script for sending and receiving protocol data (no requirements, should "just work"
   with Python 3)
-- `temperature_client.lua`: Wireshark dissector for this protocol, registers for UDP port 5678
+- `temperature_client.lua`: Wireshark dissector for this protocol, registers for TCP port 5678
 - `dump-singles.pcap`: Example capture file, one PDU per TCP segment
 - `dump-doubles.pcap`: Example capture file, two PDUs per TCP segment
 - `dump-out-of-phase.pcap`: Example capture file, two PDUs halves per TCP segment (each PDU continuing in the next

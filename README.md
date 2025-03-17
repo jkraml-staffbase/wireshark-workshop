@@ -17,7 +17,7 @@ The naming scheme follows the workshop structure.
 ## Using the Dissectors
 
 To use the dissectors, copy or symlink the Lua files to your Wireshark plugins directory (typically
-`~/.config/wireshark/plugins/` on Linux).
+`~/.local/lib/wireshark/plugins` on Linux).
 Then open one of the capture files in Wireshark and see if it works.
 
 The Python scripts to generate traffic are also included.

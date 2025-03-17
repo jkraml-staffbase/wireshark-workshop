@@ -6,7 +6,7 @@ Simple TCP protocol showing variable-size PDUs with a length header.
 
 | 1 byte        | 1-4 bytes     | 4 bytes              |
 |---------------|---------------|----------------------|
-| unit8         | char[]        | float32 (big-endian) |
+| uint8         | char[]        | float32 (big-endian) |
 | Symbol length | Ticker symbol | Current price in USD |
 
 ## Files

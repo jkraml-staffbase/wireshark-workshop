@@ -13,7 +13,9 @@ The naming scheme follows the workshop structure.
   TCP protocol showing variable-size PDUs with a length header.
 - [Zero Terminated Strings](03_tcp_string_stream/README.md)  
   TCP protocol showing variable-size PDUs with an end marker and no up-front length information.
-
+- [Upgraded Temperature Data](04_upgraded_temperature_data/README.md)  
+  UDP protocol showing Dissector delegation. 
+ 
 ## Using the Dissectors
 
 To use the dissectors, copy or symlink the Lua files to your Wireshark plugins directory (typically

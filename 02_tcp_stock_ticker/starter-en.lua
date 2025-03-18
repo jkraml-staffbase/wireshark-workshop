@@ -8,13 +8,16 @@ p_ticker.fields = { f_len, f_symbol, f_price }
 
 -- Built-in helper function for PDUs with length information at the beginning
 --   dissect_tcp_pdus(buf, tree, min_header_size, get_len_func, dissect_func)
---     buf - data buffer, passed on to the functions
---     tree - data model, passed on to the functions
---     min_header_size number of bytes needed to determine the PDU length
---     get_len_func function that calculates the PDU length from a data buffer with at least min_header_size bytes
---       arguments: data buffer, packet, and offset in the buffer where PDU header starts
---     dissect_func actual dissector for the PDU
---       arguments: the same as the normal dissector function - data buffer, packet, and data model
+--     buf - Data buffer, passed on to the functions.
+--     tree - Data model, passed on to the functions.
+--     min_header_size - Number of bytes needed to determine the PDU length.
+--     get_len_func - Function that calculates the PDU length from a data buffer with
+--                    at least min_header_size bytes.
+--                    Arguments: data buffer, packet, and offset in the buffer where
+--                    PDU header starts.
+--     dissect_func - Actual dissector for the PDU.
+--                    Arguments are the same as for the normal dissector function:
+--                    data buffer, packet, and data model.
 
 function p_ticker.dissector(buf, pkt, tree)
 

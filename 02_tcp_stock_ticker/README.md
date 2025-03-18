@@ -19,4 +19,5 @@ Simple TCP protocol showing variable-size PDUs with a length header.
 - `dump-out-of-phase.pcap`: Example capture file, two PDUs halves per TCP segment (each PDU continuing in the next
   segment)
 - `dump-randomly-segmented.pcap`: Example capture file, randomly segmented PDUs, no clear relation to TCP segments
-
+- `starter-de.lua`: Starter file, to be used as a base for the workshop - German
+- `starter-en.lua`: Starter file, to be used as a base for the workshop - English

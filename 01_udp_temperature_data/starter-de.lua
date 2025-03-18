@@ -1,0 +1,31 @@
+-- Lua Basics:
+--   local meineVar = 5
+--   function meineFkt(arg1)
+--     print("foo")
+--     return arg1 + 5
+--   end
+--
+-- Zu Protokollfunktionen siehe
+--   https://www.wireshark.org/docs/wsdg_html_chunked/lua_module_Proto.html
+--
+-- Protokoll definieren (gibt Protokollobjekt zurück):
+--   Proto("kürzel", "langer Name")
+--
+-- Feld definieren (gibt Feldobjekt zurück):
+--   ProtoField.uint8(  "Kürzel", "Name", …)
+--             .float(  "Kürzel", "Name", …)
+--             .string( "Kürzel", "Name", …)
+--             … und viele mehr
+--
+-- Felder mit Protokoll assoziieren:
+--   meinProto.fields = { feld1, feld2, feld3 }
+--
+-- Protokolldissector implementieren:
+--   function meinProto.dissector(buf, pkt, tree)
+--     buf: Datenbuffer
+--     pkt: pro-Paket-Zeile in Übersicht
+--     tree: Datenstruktur unten links
+--   end
+--
+-- Protokoll registrieren:
+--   DissectorTable.get("übergeordnetes Protokoll"):add(port, meinProto)

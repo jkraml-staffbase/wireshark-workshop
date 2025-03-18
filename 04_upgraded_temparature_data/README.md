@@ -31,3 +31,5 @@ The temperature value will likely be nonsensical.
   with Python 3)
 - `upgraded_temperature.lua`: Wireshark dissector for this protocol, registers for UDP port 4567
 - `dump.pcap`: Example capture file, with mixed old and new format packets
+- `starter-de.lua`: Starter file, to be used as a base for the workshop - German
+- `starter-en.lua`: Starter file, to be used as a base for the workshop - English

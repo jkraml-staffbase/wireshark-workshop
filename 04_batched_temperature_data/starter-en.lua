@@ -21,4 +21,4 @@ function p_multitemp.dissector(buf, pkt, tree)
 end
 
 -- Overwrite entry for UDP port 4567
-DissectorTable.get("udp.port"):add(4567, p_t2)
+DissectorTable.get("udp.port"):add(4567, p_multitemp)

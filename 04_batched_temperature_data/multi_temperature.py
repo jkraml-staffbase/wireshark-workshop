@@ -1,12 +1,10 @@
+import random
 import socket
 import struct
 import sys
-import random
-import typing
-from typing import Set
-from random import shuffle
 from time import sleep
 from typing import Sequence
+from typing import Set
 
 
 def main():

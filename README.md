@@ -13,8 +13,8 @@ The naming scheme follows the workshop structure.
   TCP protocol showing variable-size PDUs with a length header.
 - [Zero Terminated Strings](03_tcp_string_stream/README.md)  
   TCP protocol showing variable-size PDUs with an end marker and no up-front length information.
-- [Upgraded Temperature Data](04_upgraded_temperature_data/README.md)  
-  UDP protocol showing Dissector delegation. 
+- [Batched Temperature Data](04_batched_temperature_data/README.md)  
+  Wrapper protocol for batching multiple payloads of protocol 1. 
  
 ## Using the Dissectors
 
